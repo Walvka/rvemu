@@ -1,6 +1,0 @@
-{
-    "files.associations": {
-        "rvemu.h": "c",
-        "mman.h": "c"
-    }
-}
