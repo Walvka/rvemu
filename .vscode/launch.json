@@ -1,0 +1,13 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "lldb",
+            "request": "launch",
+            "name": "lldb",
+            "program": "${workspaceFolder}/rvemu",
+            "args": ["${workspaceFolder}/playground/output64.elf"],
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}

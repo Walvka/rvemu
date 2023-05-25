@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "array": "c",
+        "string": "c",
+        "string_view": "c",
+        "random": "cpp",
+        "rvemu.h": "c",
+        "interp_util.h": "c",
+        "cmath": "c",
+        "assert.h": "c"
+    }
+}
