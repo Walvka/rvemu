@@ -89,16 +89,25 @@
     void mmu_load_elf(mmu_t *mmu, int fd);
 
     /***state.c***/
-    enum exit_reason_t{
+    enum exit_reason_t {
         none,
         direct_branch,
         indirect_branch,
+        interp,
         ecall,
+    };
+
+    enum csr_t {
+        fflags = 0x001,
+        frm    = 0x002,
+        fcsr   = 0x003,
     };
 
     typedef struct _STATE_T_{
         enum exit_reason_t exit_reason;
-        u64 gp_regs[32];
+        u64 reenter_pc;
+        u64 gp_regs[num_gp_regs];
+        fp_reg_t fp_regs[num_fp_regs];
         u64 pc;
     } state_t;    
 
