@@ -125,3 +125,19 @@ typedef struct _ELF64_SHDR_T_{
     u32 s_addralign;//节区对齐
     u32 s_entsize;//项的大小
 }elf64_shdr_t;
+
+typedef struct {
+	u32 st_name;
+	u8  st_info;
+	u8  st_other;
+	u16 st_shndx;
+	u64 st_value;
+	u64 st_size;
+} elf64_sym_t;
+
+typedef struct {
+    u64 r_offset;
+    u32 r_type;
+    u32 r_sym;
+    i64 r_addend;
+} elf64_rela_t;
