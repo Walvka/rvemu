@@ -17,6 +17,9 @@
 #define PF_W            0x02
 #define PF_R            0x04
 
+
+#define R_X86_64_PC32 2
+
 typedef struct _ELF64_EHDR_T_{
     /*e_ident
     包含了Maigc Number和其它信息，共16字节

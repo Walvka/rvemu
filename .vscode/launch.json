@@ -6,7 +6,7 @@
             "request": "launch",
             "name": "lldb",
             "program": "${workspaceFolder}/rvemu",
-            "args": ["${workspaceFolder}/playground/output64.elf"],
+            "args": ["${workspaceFolder}/playground/hello"],
             "cwd": "${workspaceFolder}"
         }
     ]
